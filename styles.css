@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  /*variaveis*/
+  --bg-color: #EDF2FF;
+  --text-color: #00082F;
+  --primary-color: #4263EB;
+  --primary-color-dark: #364FC7;
+}
+
+body.dark-blue {
+  --bg-color: #00082F;
+  --text-color: #EDF2FF;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.pink {
+  --bg-color: #FFF0F6;
+  --text-color: #1F000B;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;
+}
+
+body.dark-pink {
+  --bg-color: #1F000B;
+  --text-color: #FFF0F6;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;
+}
+
+body.green {
+  --bg-color: #dff0d7;
+  --text-color: #011a03;
+  --primary-color: #19c97f;
+  --primary-color-dark: #1c744f;
+}
+
+body.dark-green {
+  --bg-color: #011a03;
+  --text-color: #dff0d7;
+  --primary-color: #19c97f;
+  --primary-color-dark: #1c744f;
+}
+
+body.orange {
+  --bg-color: #f8dfce;
+  --text-color: #1f0b00;
+  --primary-color: #e08336;
+  --primary-color-dark: #d36a15;
+}
+
+body.dark-orange {
+  --bg-color: #1f0b00;
+  --text-color: #f8dfce;
+  --primary-color: #e08336;
+  --primary-color-dark: #d36a15;
+}
+
+body.violet {
+  --bg-color: #f5e2fa;
+  --text-color: #18001f;
+  --primary-color: #ad36e0;
+  --primary-color-dark: #8415d3;
+}
+
+body.dark-violet {
+  --bg-color: #18001f;
+  --text-color: #f5e2fa;
+  --primary-color: #ad36e0;
+  --primary-color-dark: #8415d3;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img {
+  width: 100%;
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--primary-color) solid 4px;
+}
+
+ul {
+  list-style: none;
+  margin: 48px 0;
+}
+
+
+/*uso o display flex que é uma propriedade relativa referente a como as caixas se comportam em relação as caixas irmãs ao lado delas (aqui tem uma dentro da outra, o estilo sendo aplicado em <a> que está em <li> e em <ul>)*/
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  /* rex: 0 - F */
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+
+  transition: background 400ms;
+}
+
+/*pseudo class*/
+ul li a:hover {
+  background: var(--primary-color-dark);
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: var(--text-color);
+}
